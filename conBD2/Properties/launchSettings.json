@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "conBD2 (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "conBD2 (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
