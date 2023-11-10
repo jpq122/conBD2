@@ -26,6 +26,7 @@ namespace ConBD2
         public MainWindow()
         {
             this.InitializeComponent();
+            mainFrame.Navigate(typeof(AfficherMaison));
         }
 
         private void NavigationView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
@@ -35,19 +36,19 @@ namespace ConBD2
             switch (item.Name)
             {
                 case "Aff_Rng":
-                    mainFrame.Navigate(typeof(MainWindow));
+                    mainFrame.Navigate(typeof(AfficherMaison));
                     break;
                 case "Aff_Pro":
-                    mainFrame.Navigate(typeof(MainWindow));
+                    mainFrame.Navigate(typeof(AffichageProprietaire));
                     break;
                 case "Aff_Mai":
                     mainFrame.Navigate(typeof(AfficherMaison));
                     break;
                 case "Add_Pro":
-                    mainFrame.Navigate(typeof(MainWindow));
+                    mainFrame.Navigate(typeof(AfficherMaison));
                     break;
                 case "Add_Mai":
-                    mainFrame.Navigate(typeof(MainWindow));
+                    mainFrame.Navigate(typeof(AfficherMaison));
                     break;
             }
         }
