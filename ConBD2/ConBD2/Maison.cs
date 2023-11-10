@@ -8,23 +8,26 @@ namespace ConBD2
 {
     internal class Maison
     {
-            
-            private int ID;
-            private String categorie;
-            private double prix;
-            private String ville;
-            private int proprietaireID;
 
-            public Maison(int ID, String categorie, double prix, String ville, int proprietaireID)
-            {
-                this.ID = ID;
-                this.categorie = categorie;
-                this.prix = prix;
-                this.ville = ville;
-                this.proprietaireID = proprietaireID;
-            }
+        public int ID { get; set; }
+        public string Categorie { get; set; }
+        public double Prix { get; set; }
+        public string Ville { get; set; }
+        public int ProprietaireID { get; set; }
 
-            
+       
+        public string PrixFormate => Prix.ToString("C");
+
+        public Maison(int id, string categorie, double prix, string ville, int proprietaireID)
+        {
+            ID = id;
+            Categorie = categorie;
+            Prix = prix;
+            Ville = ville;
+            ProprietaireID = proprietaireID;
+        }
+
+
     }
 
 }

@@ -8,32 +8,17 @@ namespace ConBD2
 {
     internal class Propriétaire
     {
-        public class Proprietaire
+        public int ID { get; set; }
+        public string Nom { get; set; }
+        public string Prenom { get; set; }
+
+        public Propriétaire(int id, string nom, string prenom)
         {
-            private int ID;
-            private String nom;
-            private String prenom;
-
-            public Proprietaire(int ID, String nom, String prenom)
-            {
-                this.ID = ID;
-                this.nom = nom;
-                this.prenom = prenom;
-            }  
+            ID = id;
+            Nom = nom;
+            Prenom = prenom;
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 
 
 
@@ -42,4 +27,25 @@ namespace ConBD2
 
 
     }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
