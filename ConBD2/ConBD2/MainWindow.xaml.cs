@@ -28,9 +28,28 @@ namespace ConBD2
             this.InitializeComponent();
         }
 
-        private void myButton_Click(object sender, RoutedEventArgs e)
+        private void NavigationView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
         {
-            myButton.Content = "Clicked";
+            var item = (NavigationViewItem)args.SelectedItem;
+
+            switch (item.Name)
+            {
+                case "Aff_Rng":
+                    mainFrame.Navigate(typeof(MainWindow));
+                    break;
+                case "Aff_Pro":
+                    mainFrame.Navigate(typeof(MainWindow));
+                    break;
+                case "Aff_Mai":
+                    mainFrame.Navigate(typeof(MainWindow));
+                    break;
+                case "Add_Pro":
+                    mainFrame.Navigate(typeof(MainWindow));
+                    break;
+                case "Add_Mai":
+                    mainFrame.Navigate(typeof(MainWindow));
+                    break;
+            }
         }
     }
 }
