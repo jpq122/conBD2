@@ -41,7 +41,7 @@ namespace ConBD2
                     mainFrame.Navigate(typeof(MainWindow));
                     break;
                 case "Aff_Mai":
-                    mainFrame.Navigate(typeof(MainWindow));
+                    mainFrame.Navigate(typeof(AfficherMaison));
                     break;
                 case "Add_Pro":
                     mainFrame.Navigate(typeof(MainWindow));
