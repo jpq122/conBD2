@@ -1,9 +1,9 @@
 {
   "profiles": {
-    "conBD2 (Package)": {
+    "ConBD2 (Package)": {
       "commandName": "MsixPackage"
     },
-    "conBD2 (Unpackaged)": {
+    "ConBD2 (Unpackaged)": {
       "commandName": "Project"
     }
   }
